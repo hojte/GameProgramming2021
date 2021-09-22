@@ -45,7 +45,7 @@ void SpaceShip::update(float deltaTime) {
 }
 
 void SpaceShip::onCollision(std::shared_ptr<GameObject> other) {
-
+    printf("SpaceShip Collided...");
 }
 
 void SpaceShip::onKey(SDL_Event &keyEvent) {

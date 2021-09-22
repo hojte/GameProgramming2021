@@ -1,13 +1,13 @@
 ﻿#include <ctime>
 #include <glm/gtc/constants.hpp>
 #include "AsteroidsGame.hpp"
-#include "GameObject.hpp"
 #include "SpaceShip.hpp"
-
+#include "Asteroid.hpp"
 
 using namespace sre;
 
 AsteroidsGame::AsteroidsGame() {
+    //singleton = this;
     r.setWindowTitle("Asteroids");
 
     r.init().withSdlInitFlags(SDL_INIT_EVERYTHING)
@@ -21,6 +21,10 @@ AsteroidsGame::AsteroidsGame() {
 
     auto spaceshipSprite = atlas->get("playerShip3_blue.png");
     gameObjects.push_back(std::make_shared<SpaceShip>(spaceshipSprite));
+
+    auto asteroidSprite = atlas->get("Meteors/meteorGrey_big1.png");
+    gameObjects.push_back(std::make_shared<Asteroid>(this));
+    gameObjects.push_back(std::make_shared<Asteroid>(this));
 
     camera.setWindowCoordinates();
 
@@ -43,6 +47,10 @@ void AsteroidsGame::update(float deltaTime) {
 	for (auto & gameObject : gameObjects) {
 		gameObject->update(deltaTime);
     }
+}
+
+Sprite AsteroidsGame::getSprite(std::string fileName) {
+    return atlas->get(fileName);
 }
 
 void drawCircle(std::vector<glm::vec3>& lines, glm::vec2 position, float radius){
@@ -103,7 +111,12 @@ void AsteroidsGame::keyEvent(SDL_Event &event) {
     }
 }
 
-int main(){
+void AsteroidsGame::unregister(GameObject *pGameObj) {
+    printf("Del: %p", pGameObj);
+    //gameObjects.erase(pGameObj);
+}
+
+int main() {
     new AsteroidsGame();
     return 0;
 }

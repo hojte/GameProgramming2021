@@ -4,11 +4,15 @@
 #include "sre/SDLRenderer.hpp"
 #include "sre/SpriteAtlas.hpp"
 
+
 class GameObject;
 
 class AsteroidsGame {
 public:
     AsteroidsGame();
+    sre::Sprite getSprite(std::string fileName);
+
+    void unregister(GameObject *pGameObj);
 
 private:
     void update(float deltaTime);
