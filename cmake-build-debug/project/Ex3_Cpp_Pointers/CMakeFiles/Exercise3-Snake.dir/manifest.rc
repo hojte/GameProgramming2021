@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/project/Ex3_Cpp_Pointers/CMakeFiles/Exercise3-Snake.dir/embed.manifest"

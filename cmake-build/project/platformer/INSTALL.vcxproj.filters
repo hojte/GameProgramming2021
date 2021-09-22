@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\5748a16f3305c80dcd36b4f3e2dc35f4\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0315083F-44AC-3DAA-9BA7-F36756F4D208}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

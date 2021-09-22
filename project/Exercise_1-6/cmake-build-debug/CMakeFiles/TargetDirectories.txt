@@ -1,0 +1,3 @@
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Exercise_1-6/cmake-build-debug/CMakeFiles/Exercise_1_6.dir
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Exercise_1-6/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Exercise_1-6/cmake-build-debug/CMakeFiles/rebuild_cache.dir

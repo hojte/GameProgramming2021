@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\examples\05_obj-viewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{F4E64B91-DA5A-3669-8FDE-6198B2C6A7EE}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

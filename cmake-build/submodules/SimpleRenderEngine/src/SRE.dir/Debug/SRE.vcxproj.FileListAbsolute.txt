@@ -1,0 +1,2 @@
+D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\src\Debug\SRE.pdb
+D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\src\SRE.dir\Debug\SRE.pdb

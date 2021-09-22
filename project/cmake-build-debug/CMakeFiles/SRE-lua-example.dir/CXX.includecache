@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/lua-example.cpp
+iostream
+-
+sre/SDLRenderer.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sre/SDLRenderer.hpp
+sre/SpriteAtlas.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sre/SpriteAtlas.hpp
+sre/Texture.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sre/Texture.hpp
+sre/Material.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sre/Material.hpp
+sre/Inspector.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sre/Inspector.hpp
+glm/gtc/random.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/glm/gtc/random.hpp
+glm/gtx/transform.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/glm/gtx/transform.hpp
+glm/ext.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/glm/ext.hpp
+sol.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/sol.hpp
+

@@ -1,0 +1,256 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/BirdMovementComponent.cpp
+iostream
+-
+BirdMovementComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/BirdMovementComponent.hpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/BirdMovementComponent.hpp
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+vector
+-
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/glm.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2DDebugDraw.cpp
+Box2DDebugDraw.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2DDebugDraw.hpp
+glm/gtc/random.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/gtc/random.hpp
+glm/ext.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/ext.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2DDebugDraw.hpp
+Box2D/Common/b2Draw.h
+-
+vector
+-
+glm/vec3.hpp
+-
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/CharacterController.cpp
+SDL_events.h
+-
+iostream
+-
+CharacterController.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/CharacterController.hpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+PhysicsComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/CharacterController.hpp
+Box2D/Box2D.h
+-
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+sre/Sprite.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/Sprite.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.cpp
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+sre/SpriteBatch.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/SpriteBatch.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.cpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+cassert
+-
+algorithm
+-
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+memory
+-
+vector
+-
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/glm.hpp
+sre/SpriteBatch.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/SpriteBatch.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Level.cpp
+Level.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Level.hpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+PhysicsComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+PlatformComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformComponent.hpp
+MovingPlatformComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/MovingPlatformComponent.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Level.hpp
+memory
+-
+vector
+-
+sre/SpriteAtlas.hpp
+-
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/MovingPlatformComponent.cpp
+MovingPlatformComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/MovingPlatformComponent.hpp
+PlatformComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformComponent.hpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/MovingPlatformComponent.hpp
+memory
+-
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/glm.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.cpp
+Box2D/Box2D.h
+-
+glm/gtx/norm.hpp
+-
+PhysicsComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+Box2D/Common/b2Math.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Common/b2Math.h
+Box2D/Collision/Shapes/b2PolygonShape.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Collision/Shapes/b2PolygonShape.h
+Box2D/Collision/Shapes/b2CircleShape.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Collision/Shapes/b2CircleShape.h
+Box2D/Dynamics/b2Body.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Dynamics/b2Body.h
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformComponent.cpp
+Box2D/Box2D.h
+-
+iostream
+-
+glm/ext.hpp
+-
+PlatformComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformComponent.hpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+PhysicsComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformComponent.hpp
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+vector
+-
+memory
+-
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/glm.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.cpp
+sre/Inspector.hpp
+-
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+sre/RenderPass.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/RenderPass.hpp
+sre/Texture.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/Texture.hpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+Box2D/Dynamics/Contacts/b2Contact.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Dynamics/Contacts/b2Contact.h
+PhysicsComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PhysicsComponent.hpp
+CharacterController.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/CharacterController.hpp
+BirdMovementComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/BirdMovementComponent.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+sre/SDLRenderer.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/SDLRenderer.hpp
+sre/SpriteAtlas.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/SpriteAtlas.hpp
+vector
+-
+Box2D/Dynamics/b2World.h
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2D/Dynamics/b2World.h
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+SideScrollingCamera.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SideScrollingCamera.hpp
+Box2DDebugDraw.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Box2DDebugDraw.hpp
+Level.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Level.hpp
+BirdMovementComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/BirdMovementComponent.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SideScrollingCamera.cpp
+SideScrollingCamera.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SideScrollingCamera.hpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SideScrollingCamera.hpp
+sre/Camera.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/Camera.hpp
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/glm/glm.hpp
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.cpp
+SpriteComponent.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+GameObject.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/GameObject.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/SpriteComponent.hpp
+Component.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/Component.hpp
+sre/Sprite.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/sre/Sprite.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/main.cpp
+PlatformerGame.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/PlatformerGame.hpp
+iostream
+-
+

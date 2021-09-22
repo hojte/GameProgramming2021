@@ -1,0 +1,68 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/Particle.cpp
+Particle.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/Particle.hpp
+limits
+-
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/Particle.hpp
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/glm/glm.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/ParticleSystem.cpp
+ParticleSystem.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/ParticleSystem.hpp
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/ParticleSystem.hpp
+Particle.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/Particle.hpp
+glm/glm.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/glm/glm.hpp
+glm/gtc/random.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/glm/gtc/random.hpp
+vector
+-
+functional
+-
+sre/Sprite.hpp
+-
+sre/Material.hpp
+-
+sre/RenderPass.hpp
+-
+sre/Mesh.hpp
+-
+
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/main.cpp
+iostream
+-
+sre/Texture.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/sre/Texture.hpp
+sre/Renderer.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/sre/Renderer.hpp
+sre/Material.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/sre/Material.hpp
+ParticleSystem.hpp
+D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/ParticleSystem.hpp
+glm/gtx/euler_angles.hpp
+-
+glm/gtx/transform.hpp
+-
+glm/gtc/matrix_transform.hpp
+-
+sre/SDLRenderer.hpp
+-
+sre/impl/GL.hpp
+-
+glm/gtc/random.hpp
+-
+vector
+-
+

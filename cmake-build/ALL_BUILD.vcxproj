@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{808E9B72-429C-3E04-A4FC-5F779BAC269A}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2-2.0.9\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\glew-2.1.0\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_image-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_mixer-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Box2D\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Lua\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\All\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\ImGuiColorTextEdit;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\imgui;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\glm;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\picojson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2-2.0.9\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\glew-2.1.0\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_image-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_mixer-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Box2D\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Lua\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\All\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\ImGuiColorTextEdit;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\imgui;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\glm;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\picojson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2-2.0.9\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\glew-2.1.0\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_image-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_mixer-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Box2D\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Lua\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\All\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\ImGuiColorTextEdit;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\imgui;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\glm;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\picojson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2-2.0.9\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\glew-2.1.0\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_image-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\SDL2_mixer-2.0.4\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Box2D\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\Win\Lua\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\thirdparty\All\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\include;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\ImGuiColorTextEdit;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\imgui;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\glm;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\submodules\SimpleRenderEngine\submodules\picojson;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject" "-BD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build" --check-stamp-file "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject" "-BD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build" --check-stamp-file "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject" "-BD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build" --check-stamp-file "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject" "-BD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build" --check-stamp-file "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeCXXCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeRCCompiler.cmake;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\3.21.2\CMakeSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindOpenGL.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\FindPackageMessage.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\Program Files\CMake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{12C0F896-986B-3625-9778-3AE3E3B30C1A}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\Ex3_Cpp_Pointers\Exercise3-Snake.vcxproj">
+      <Project>{4C913207-AFC0-3681-BD2D-DFA97075F1B8}</Project>
+      <Name>Exercise3-Snake</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\Exercise_1-6\Exercise_1_6.vcxproj">
+      <Project>{AF24D965-CE3B-3179-B880-1BA164DE9CAA}</Project>
+      <Name>Exercise_1_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\src\SRE.vcxproj">
+      <Project>{69108E64-B2BD-3359-9F54-C6ADC7D3E8AB}</Project>
+      <Name>SRE</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-00_hello-engine.vcxproj">
+      <Project>{64B8BF7F-E3FC-37BF-A610-791A2F692EC7}</Project>
+      <Name>SRE-Example-00_hello-engine</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-01_hello-engine-raw.vcxproj">
+      <Project>{32F62806-D603-3B1F-AC66-4D8F9DCD5545}</Project>
+      <Name>SRE-Example-01_hello-engine-raw</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-02_spheres.vcxproj">
+      <Project>{66ECED7A-1414-3FE7-B1AD-A451C3CC6EB2}</Project>
+      <Name>SRE-Example-02_spheres</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-03_spinning-cube.vcxproj">
+      <Project>{9BC6DCE7-E25A-38A4-BFF0-D0645ADF118A}</Project>
+      <Name>SRE-Example-03_spinning-cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-04_spinning-primitives-tex.vcxproj">
+      <Project>{B3893DDD-F481-39B4-B146-AC644D63B212}</Project>
+      <Name>SRE-Example-04_spinning-primitives-tex</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-05_obj-viewer.vcxproj">
+      <Project>{9F4B9E47-7D3B-343D-BB1A-35368AD85521}</Project>
+      <Name>SRE-Example-05_obj-viewer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-06_custom-mesh-layout.vcxproj">
+      <Project>{FA27F7F2-3E82-3C3E-A190-F64602C4FB21}</Project>
+      <Name>SRE-Example-06_custom-mesh-layout</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-07_matcap.vcxproj">
+      <Project>{9F8D10D3-D540-3EF0-BBA5-CF9451D73ED0}</Project>
+      <Name>SRE-Example-07_matcap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-08_gui.vcxproj">
+      <Project>{4BF5ED6C-EBC9-3B7B-9380-E4C6F81AB749}</Project>
+      <Name>SRE-Example-08_gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-09_picking.vcxproj">
+      <Project>{B9C23E4C-E5FC-3C02-980C-5D5B90B9C35D}</Project>
+      <Name>SRE-Example-09_picking</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-10_skybox-example.vcxproj">
+      <Project>{27B4B9DE-5602-3380-AFD0-E34969382867}</Project>
+      <Name>SRE-Example-10_skybox-example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-11_sprite-example.vcxproj">
+      <Project>{6A32ED52-B289-38A4-898B-10CC09846413}</Project>
+      <Name>SRE-Example-11_sprite-example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-12_render-to-texture.vcxproj">
+      <Project>{3EE8ECD3-D960-3C5E-B100-6B1EB08B4ECC}</Project>
+      <Name>SRE-Example-12_render-to-texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-13_benchmark64k.vcxproj">
+      <Project>{9C64BFA6-C4EC-3FF7-8ECD-5B6E5CD69563}</Project>
+      <Name>SRE-Example-13_benchmark64k</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-14_spinning-primitives-openvr.vcxproj">
+      <Project>{2AA35C6E-3DAD-3D2F-AE5F-39D8ED19323C}</Project>
+      <Name>SRE-Example-14_spinning-primitives-openvr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-15_cloth_simulation.vcxproj">
+      <Project>{3E0355F0-8472-30D4-BA91-FE922C5A5246}</Project>
+      <Name>SRE-Example-15_cloth_simulation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-16_shadows.vcxproj">
+      <Project>{4CE4DC57-5877-3F76-8643-D8BB8AAB13A3}</Project>
+      <Name>SRE-Example-16_shadows</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\submodules\SimpleRenderEngine\examples\SRE-Example-17_deferred-shading.vcxproj">
+      <Project>{98236ACD-4324-3D6F-956F-E936539CF78D}</Project>
+      <Name>SRE-Example-17_deferred-shading</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\gui\SRE-Gui.vcxproj">
+      <Project>{052C41B1-A1EE-37F1-9058-FB064EB82982}</Project>
+      <Name>SRE-Gui</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\particle_system\SRE-ParticleSystem.vcxproj">
+      <Project>{712B68C9-4FE0-3DF8-8C25-F545F7242342}</Project>
+      <Name>SRE-ParticleSystem</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\platformer\SRE-Platformer.vcxproj">
+      <Project>{007F435B-8A90-3A0A-8425-DCEA979E2DEE}</Project>
+      <Name>SRE-Platformer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\Box2DTestbed\SRE-box2d-Testbed.vcxproj">
+      <Project>{18C1A81D-06DF-36A2-A759-225104923A30}</Project>
+      <Name>SRE-box2d-Testbed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-box2d-example.vcxproj">
+      <Project>{63D25F4E-3605-3DED-A0F7-5E71E42C03F3}</Project>
+      <Name>SRE-box2d-example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-box2d-platform-example.vcxproj">
+      <Project>{19C7B3D8-6E5D-3FE0-9725-1806321C4F37}</Project>
+      <Name>SRE-box2d-platform-example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-lua-example.vcxproj">
+      <Project>{C612E0E8-4C80-38D1-B9BA-E91113E00FD5}</Project>
+      <Name>SRE-lua-example</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-lua-example-lines.vcxproj">
+      <Project>{27988095-62AB-3D22-B4F8-19E4C6DC5E20}</Project>
+      <Name>SRE-lua-example-lines</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-node-editor.vcxproj">
+      <Project>{668BDE88-8098-3F18-8264-A683A8E7AAB8}</Project>
+      <Name>SRE-node-editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-project.vcxproj">
+      <Project>{6DCC6040-DA3C-3F1F-A38C-D1C9DC06945B}</Project>
+      <Name>SRE-project</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-scene-graph.vcxproj">
+      <Project>{BDCAF2F8-8C2E-36E9-966B-7AB48603E867}</Project>
+      <Name>SRE-scene-graph</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build\project\SRE-sdl2_mixer-example.vcxproj">
+      <Project>{EF199226-4C8E-302A-A34E-DF227C6DAA19}</Project>
+      <Name>SRE-sdl2_mixer-example</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/CMakeFiles/SRE-Example-15_cloth_simulation.dir/embed.manifest"

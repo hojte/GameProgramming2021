@@ -1,0 +1,1634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SimpleRenderEngine"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\project\;CMake Files\project\Exercise_1-6\;CMake Files\project\Box2DTestbed\;CMake Files\project\platformer\;CMake Files\project\particle_system\;CMake Files\project\gui\;CMake Files\project\Ex3_Cpp_Pointers\;CMake Files\project\Ex4_Sprites\;CMake Files\submodules\;CMake Files\submodules\SimpleRenderEngine\;CMake Files\submodules\SimpleRenderEngine\submodules\;CMake Files\submodules\SimpleRenderEngine\src\;CMake Files\submodules\SimpleRenderEngine\examples\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/src/SRE.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 SRE"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/src/SRE.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/src"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 SRE/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\src\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-03_spinning-cube">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-03_spinning-cube.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-03_spinning-cube"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-03_spinning-cube/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-03_spinning-cube.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-03_spinning-cube/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-00_hello-engine">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-00_hello-engine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-00_hello-engine"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-00_hello-engine/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-00_hello-engine.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-00_hello-engine/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-04_spinning-primitives-tex">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-04_spinning-primitives-tex.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-04_spinning-primitives-tex"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-04_spinning-primitives-tex/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-04_spinning-primitives-tex.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-04_spinning-primitives-tex/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-01_hello-engine-raw">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-01_hello-engine-raw.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-01_hello-engine-raw"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-01_hello-engine-raw/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-01_hello-engine-raw.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-01_hello-engine-raw/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-02_spheres">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-02_spheres.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-02_spheres"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-02_spheres/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-02_spheres.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-02_spheres/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-05_obj-viewer">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-05_obj-viewer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-05_obj-viewer"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-05_obj-viewer/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-05_obj-viewer.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-05_obj-viewer/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-06_custom-mesh-layout">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-06_custom-mesh-layout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-06_custom-mesh-layout"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-06_custom-mesh-layout/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-06_custom-mesh-layout.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-06_custom-mesh-layout/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-07_matcap">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-07_matcap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-07_matcap"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-07_matcap/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-07_matcap.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-07_matcap/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-08_gui">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-08_gui.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-08_gui"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-08_gui/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-08_gui.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-08_gui/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-09_picking">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-09_picking.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-09_picking"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-09_picking/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-09_picking.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-09_picking/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-10_skybox-example">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-10_skybox-example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-10_skybox-example"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-10_skybox-example/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-10_skybox-example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-10_skybox-example/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-11_sprite-example">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-11_sprite-example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-11_sprite-example"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-11_sprite-example/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-11_sprite-example.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-11_sprite-example/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-12_render-to-texture">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-12_render-to-texture.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-12_render-to-texture"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-12_render-to-texture/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-12_render-to-texture.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-12_render-to-texture/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-13_benchmark64k">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-13_benchmark64k.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-13_benchmark64k"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-13_benchmark64k/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-13_benchmark64k.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-13_benchmark64k/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-14_spinning-primitives-openvr">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-14_spinning-primitives-openvr.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-14_spinning-primitives-openvr"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-14_spinning-primitives-openvr/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-14_spinning-primitives-openvr.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-14_spinning-primitives-openvr/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-15_cloth_simulation">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-15_cloth_simulation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-15_cloth_simulation"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-15_cloth_simulation/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-15_cloth_simulation.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-15_cloth_simulation/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-16_shadows">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-16_shadows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-16_shadows"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-16_shadows/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-16_shadows.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-16_shadows/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-17_deferred-shading">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-17_deferred-shading.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-17_deferred-shading"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SRE-Example-17_deferred-shading/fast">
+				<Option output="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples/SRE-Example-17_deferred-shading.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build-debug/submodules/SimpleRenderEngine/examples"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2-2.0.9/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/glew-2.1.0/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_image-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/SDL2_mixer-2.0.4/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Box2D/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/Win/Lua/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/thirdparty/All/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/glm"/>
+					<Add directory="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/picojson"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 SRE-Example-17_deferred-shading/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;D:\Lokale Dokumenter\GameProgramming2021\SimpleRenderEngineProject\cmake-build-debug\submodules\SimpleRenderEngine\examples\Makefile&quot; VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/00_hello-engine.cpp">
+			<Option target="SRE-Example-00_hello-engine"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/01_hello-engine-raw.cpp">
+			<Option target="SRE-Example-01_hello-engine-raw"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/02_spheres.cpp">
+			<Option target="SRE-Example-02_spheres"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/03_spinning-cube.cpp">
+			<Option target="SRE-Example-03_spinning-cube"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/04_spinning-primitives-tex.cpp">
+			<Option target="SRE-Example-04_spinning-primitives-tex"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/05_obj-viewer.cpp">
+			<Option target="SRE-Example-05_obj-viewer"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/06_custom-mesh-layout.cpp">
+			<Option target="SRE-Example-06_custom-mesh-layout"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/07_matcap.cpp">
+			<Option target="SRE-Example-07_matcap"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/08_gui.cpp">
+			<Option target="SRE-Example-08_gui"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/09_picking.cpp">
+			<Option target="SRE-Example-09_picking"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/10_skybox-example.cpp">
+			<Option target="SRE-Example-10_skybox-example"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/11_sprite-example.cpp">
+			<Option target="SRE-Example-11_sprite-example"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/12_render-to-texture.cpp">
+			<Option target="SRE-Example-12_render-to-texture"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/13_benchmark64k.cpp">
+			<Option target="SRE-Example-13_benchmark64k"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/14_spinning-primitives-openvr.cpp">
+			<Option target="SRE-Example-14_spinning-primitives-openvr"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/15_cloth_simulation.cpp">
+			<Option target="SRE-Example-15_cloth_simulation"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/16_shadows.cpp">
+			<Option target="SRE-Example-16_shadows"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/17_deferred-shading.cpp">
+			<Option target="SRE-Example-17_deferred-shading"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/BlendType.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Camera.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Color.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Framebuffer.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Inspector.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Light.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/LightType.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Log.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Material.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Mesh.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/MeshTopology.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/ModelImporter.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/RenderPass.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/RenderStats.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Renderer.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Resource.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/SDLRenderer.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Shader.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Skybox.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Sprite.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/SpriteAtlas.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/SpriteBatch.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/Texture.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/VR.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/WorldLights.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/imgui_sre.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/impl/CPPShim.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/impl/Export.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/impl/GL.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/include/sre/impl/UniformSet.hpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Camera.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Color.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Framebuffer.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Inspector.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Light.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Log.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Material.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Mesh.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/ModelImporter.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/RenderPass.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Renderer.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Resource.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/SDLRenderer.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Shader.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Skybox.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Sprite.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/SpriteAtlas.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/SpriteBatch.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/Texture.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/VR.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/WorldLights.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/imgui_sre.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/impl/GL.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/sre/impl/UniformSet.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit/TextEditor.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/ImGuiColorTextEdit/TextEditor.h">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui/imgui.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui/imgui.h">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui/imgui_draw.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/imgui/imgui_widgets.cpp">
+			<Option target="SRE"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Exercise_1-6/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\Exercise_1-6\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Box2DTestbed/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\Box2DTestbed\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/platformer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\platformer\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/particle_system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\particle_system\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/gui/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\gui\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Ex3_Cpp_Pointers/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\Ex3_Cpp_Pointers\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/project/Ex4_Sprites/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\project\Ex4_Sprites\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\SimpleRenderEngine\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/submodules/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\SimpleRenderEngine\submodules\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\SimpleRenderEngine\src\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/submodules/SimpleRenderEngine/examples/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\submodules\SimpleRenderEngine\examples\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake/FindGLEW.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake/FindSDL2_IMAGE.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

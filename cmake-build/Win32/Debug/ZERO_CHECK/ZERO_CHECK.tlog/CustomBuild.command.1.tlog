@@ -1,0 +1,10 @@
+^D:\LOKALE DOKUMENTER\GAMEPROGRAMMING2021\SIMPLERENDERENGINEPROJECT\CMAKE-BUILD\CMAKEFILES\25705ED261B22CF48598337311B7CF17\GENERATE.STAMP.RULE
+setlocal
+"D:\Program Files\CMake\bin\cmake.exe" "-SD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject" "-BD:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Lokale Dokumenter/GameProgramming2021/SimpleRenderEngineProject/cmake-build/SimpleRenderEngineProject.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
