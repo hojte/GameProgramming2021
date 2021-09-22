@@ -1,0 +1,14 @@
+//
+// Created by hojte on 22/09/2021.
+//
+
+#ifndef SIMPLERENDERENGINEPROJECT_ASTEROID_H
+#define SIMPLERENDERENGINEPROJECT_ASTEROID_H
+
+
+class Asteroid {
+
+};
+
+
+#endif //SIMPLERENDERENGINEPROJECT_ASTEROID_H

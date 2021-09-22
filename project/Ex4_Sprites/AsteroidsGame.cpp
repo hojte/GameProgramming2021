@@ -19,7 +19,7 @@ AsteroidsGame::AsteroidsGame() {
 
     atlas = SpriteAtlas::create("asteroids.json","asteroids.png");
 
-    auto spaceshipSprite = atlas->get("playerShip1_blue.png");
+    auto spaceshipSprite = atlas->get("playerShip3_blue.png");
     gameObjects.push_back(std::make_shared<SpaceShip>(spaceshipSprite));
 
     camera.setWindowCoordinates();
@@ -40,8 +40,8 @@ AsteroidsGame::AsteroidsGame() {
 }
 
 void AsteroidsGame::update(float deltaTime) {
-	for (int i = 0; i < gameObjects.size();i++) {
-		gameObjects[i]->update(deltaTime);
+	for (auto & gameObject : gameObjects) {
+		gameObject->update(deltaTime);
     }
 }
 
@@ -50,15 +50,15 @@ void drawCircle(std::vector<glm::vec3>& lines, glm::vec2 position, float radius)
     float quaterPi = glm::two_pi<float>() / (float)sides;
     for (float f = 0; f<glm::two_pi<float>(); f += quaterPi){
         // line from
-        lines.push_back(glm::vec3{position.x + cosf(f)*radius,
+        lines.emplace_back(position.x + cosf(f)*radius,
                                   position.y + sinf(f)*radius,
                                   0
-        });
+        );
         // line to
-        lines.push_back(glm::vec3{position.x + cosf(f+quaterPi)*radius,
+        lines.emplace_back(position.x + cosf(f+quaterPi)*radius,
                                   position.y + sinf(f+quaterPi)*radius,
                                   0
-        });
+        );
     }
 }
 
@@ -69,8 +69,8 @@ void AsteroidsGame::render() {
             .build();
     auto spriteBatchBuilder = SpriteBatch::create();
 
-    for (int i = 0; i < gameObjects.size();i++) {
-        gameObjects[i]->render(spriteBatchBuilder);
+    for (auto & gameObject : gameObjects) {
+        gameObject->render(spriteBatchBuilder);
     }
     auto spriteBatch = spriteBatchBuilder.build();
     renderPass.draw(spriteBatch);
@@ -95,8 +95,8 @@ void AsteroidsGame::render() {
 }
 
 void AsteroidsGame::keyEvent(SDL_Event &event) {
-    for (int i = 0; i < gameObjects.size();i++) {
-        gameObjects[i]->onKey(event);
+    for (auto & gameObject : gameObjects) {
+        gameObject->onKey(event);
     }
     if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_d){
         debugCollisionCircles = !debugCollisionCircles;

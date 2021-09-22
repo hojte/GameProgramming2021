@@ -1,21 +1,76 @@
 {"frames": [
 
 {
-	"filename": "playerShip1_blue.png",
-	"frame": {"x":0,"y":0,"w":99,"h":75},
+	"filename": "bang.png",
+	"frame": {"x":0,"y":159,"w":120,"h":89},
 	"rotated": false,
 	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":99,"h":75},
-	"sourceSize": {"w":99,"h":75},
-	"pivot": {"x":0.5,"y":0.5}
+	"spriteSourceSize": {"x":0,"y":0,"w":120,"h":89},
+	"sourceSize": {"w":120,"h":89}
+},
+{
+	"filename": "Lasers/laserBlue07.png",
+	"frame": {"x":0,"y":0,"w":9,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":37},
+	"sourceSize": {"w":9,"h":37}
+},
+{
+	"filename": "Lasers/laserRed07.png",
+	"frame": {"x":9,"y":0,"w":9,"h":37},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":9,"h":37},
+	"sourceSize": {"w":9,"h":37}
+},
+{
+	"filename": "Meteors/meteorGrey_big1.png",
+	"frame": {"x":98,"y":75,"w":101,"h":84},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":101,"h":84},
+	"sourceSize": {"w":101,"h":84}
+},
+{
+	"filename": "Meteors/meteorGrey_med1.png",
+	"frame": {"x":46,"y":0,"w":43,"h":43},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":43,"h":43},
+	"sourceSize": {"w":43,"h":43}
+},
+{
+	"filename": "Meteors/meteorGrey_small1.png",
+	"frame": {"x":18,"y":0,"w":28,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":28,"h":28},
+	"sourceSize": {"w":28,"h":28}
+},
+{
+	"filename": "playerShip3_blue.png",
+	"frame": {"x":89,"y":0,"w":98,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":75},
+	"sourceSize": {"w":98,"h":75}
+},
+{
+	"filename": "playerShip3_red.png",
+	"frame": {"x":0,"y":75,"w":98,"h":75},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":98,"h":75},
+	"sourceSize": {"w":98,"h":75}
 }],
 "meta": {
-	"app": "http://www.codeandweb.com/texturepacker",
+	"app": "https://www.codeandweb.com/texturepacker",
 	"version": "1.0",
-	"image": "astroids.png",
+	"image": "sprite_test.png",
 	"format": "RGBA8888",
-	"size": {"w":128,"h":128},
+	"size": {"w":256,"h":256},
 	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:2d2b40001ba5a9647a69f1feeeb90613:ca57cff0f83802beb6f6bbc23cb57a90:5466bbc1ed9105e5250229059ef59bfa$"
+	"smartupdate": "$TexturePacker:SmartUpdate:ac96e4e5514b59004758ac717abeaf78:5312cc03a5a812759ef4c7143876d2b6:e2c998ad5b48a6da356a9a84831ec759$"
 }
 }

@@ -19,6 +19,7 @@ x64/
 build/
 [Bb]in/
 [Oo]bj/
+cmake-build-debug/
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
