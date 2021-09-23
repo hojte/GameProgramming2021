@@ -5,13 +5,12 @@
 #include <sre/Renderer.hpp>
 #include "Asteroid.hpp"
 
-Asteroid::Asteroid(AsteroidsGame *_pAsteroidsGame, glm::vec2 _position, int size) : GameObject(sprite) {
-    pAsteroidsGame = _pAsteroidsGame;
+Asteroid::Asteroid(glm::vec2 _position, int size) : GameObject(sprite) {
     velocity = glm::vec2(rand() % 200 - 100, rand() % 200 - 100);
     winSize = sre::Renderer::instance->getDrawableSize();
     position = _position.x != 0 ? _position : glm::vec2(rand() % int(winSize.x), rand() % int(winSize.y));
     scale = glm::vec2(0.7f,0.7f);
-    sprite = pAsteroidsGame->getSprite("Meteors/meteorGrey_big1.png");
+    sprite = AsteroidsGame::pSingleton->getSprite("Meteors/meteorGrey_big1.png");
     radius = 25;
     rotationSpeed = rand() % 100 + 40;
 }

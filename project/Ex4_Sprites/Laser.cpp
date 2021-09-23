@@ -6,10 +6,8 @@
 #include <glm/gtx/rotate_vector.hpp>
 #include "Laser.hpp"
 
-Laser::Laser(AsteroidsGame *_pAsteroidsGame, const glm::vec2 _position, float _rotation) : GameObject(sprite) {
-    pAsteroidsGame = _pAsteroidsGame;
-    printf("%p = ptr to GM:Laser\n", pAsteroidsGame);
-    sprite = pAsteroidsGame->getSprite("Lasers/laserBlue07.png");
+Laser::Laser(const glm::vec2 _position, float _rotation) : GameObject(sprite) {
+    sprite = AsteroidsGame::pSingleton->getSprite("Lasers/laserBlue07.png");
     winSize = sre::Renderer::instance->getWindowSize();
     radius = 10;
     position = _position;
@@ -37,6 +35,6 @@ void Laser::update(float deltaTime) {
 
 void Laser::onCollision(std::shared_ptr<GameObject> other) {
     if (dynamic_cast<Asteroid*>(&*other) != nullptr) {
-        pAsteroidsGame->unregisterObject(&*this);
+        AsteroidsGame::pSingleton->unregisterObject(&*this);
     }
 }

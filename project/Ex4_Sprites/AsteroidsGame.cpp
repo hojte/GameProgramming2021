@@ -2,13 +2,12 @@
 #include <glm/gtc/constants.hpp>
 #include "AsteroidsGame.hpp"
 #include "SpaceShip.hpp"
-#include "Laser.hpp"
-//#include "Asteroid.hpp"
 
 using namespace sre;
-
+AsteroidsGame* AsteroidsGame::pSingleton = nullptr;
 AsteroidsGame::AsteroidsGame() {
-    printf("%p <-real pointer\n", this);
+    pSingleton=this;
+
     r.setWindowTitle("Asteroids");
 
     r.init().withSdlInitFlags(SDL_INIT_EVERYTHING)
@@ -20,10 +19,13 @@ AsteroidsGame::AsteroidsGame() {
 
     atlas = SpriteAtlas::create("asteroids.json","asteroids.png");
 
-    gameObjects.push_back(std::make_shared<SpaceShip>(this));
+    gameObjects.push_back(std::make_shared<SpaceShip>());
 
-//    gameObjects.push_back(std::make_shared<Asteroid>(this));
-    gameObjects.push_back(std::make_shared<Laser>(this, ((glm::vec2)sre::Renderer::instance->getDrawableSize()) * 0.5f, 0));
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
 
     camera.setWindowCoordinates();
 
@@ -118,10 +120,6 @@ void AsteroidsGame::unregisterObject(GameObject *pGameObj) {
 
 void AsteroidsGame::instantiateObject(std::shared_ptr<GameObject> pGameObj) {
     gameObjects.push_back(pGameObj);
-}
-
-AsteroidsGame *AsteroidsGame::getGMPointer() {
-    return this;
 }
 
 int main() {

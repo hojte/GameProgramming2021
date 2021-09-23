@@ -7,7 +7,7 @@
 
 class SpaceShip : public GameObject, public Collidable  {
 public:
-    SpaceShip(AsteroidsGame *pAsteroidsGame);
+    SpaceShip();
 
     void update(float deltaTime) override;
     void onCollision(std::shared_ptr<GameObject> other) override;
@@ -23,10 +23,9 @@ private:
     float thrustPower = 600.0f;
     float rotationSpeed = 100.0f;
     glm::vec2 velocity;
+    int shotsFired = 0;
 
     glm::vec2 winSize;
-
-    AsteroidsGame *pAsteroidsGame;
 };
 
 

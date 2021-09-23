@@ -10,12 +10,13 @@ class GameObject;
 class AsteroidsGame {
 public:
     AsteroidsGame();
+    static AsteroidsGame *pSingleton;
+
     sre::Sprite getSprite(std::string fileName);
 
     void unregisterObject(GameObject *pGameObj);
     void instantiateObject(std::shared_ptr<GameObject> pGameObj);
 
-    AsteroidsGame* getGMPointer();
 
 private:
     void update(float deltaTime);

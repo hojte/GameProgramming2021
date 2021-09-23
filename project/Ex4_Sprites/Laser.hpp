@@ -11,14 +11,15 @@
 
 class Laser : public GameObject, public Collidable {
 public:
-    Laser(AsteroidsGame* pAsteroidsGame, glm::vec2 position, float rotation);
+    Laser(glm::vec2 position, float rotation);
 
     void update(float deltaTime) override;
 
     void onCollision(std::shared_ptr<GameObject> other) override;
 
     glm::vec2 velocity{};
+
+    static bool isPresent;
 private:
     glm::vec2 winSize{};
-    AsteroidsGame *pAsteroidsGame;
 };

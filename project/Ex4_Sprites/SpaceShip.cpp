@@ -1,17 +1,14 @@
 #define GLM_ENABLE_EXPERIMENTAL
 #include <glm/gtx/rotate_vector.hpp>
 #include "SpaceShip.hpp"
-#include "sre/Renderer.hpp"
 #include "Laser.hpp"
-
-SpaceShip::SpaceShip(AsteroidsGame *_pAsteroidsGame) : GameObject(sprite) {
-    pAsteroidsGame = _pAsteroidsGame;
+SpaceShip::SpaceShip() : GameObject(sprite) {
     scale = glm::vec2(0.5f,0.5f);
     winSize = sre::Renderer::instance->getDrawableSize();
     radius = 23;
     position = winSize * 0.5f;
     velocity = glm::vec2(0.0f,0.0f);
-    sprite = pAsteroidsGame->getSprite("playerShip3_blue.png");
+    sprite = AsteroidsGame::pSingleton->getSprite("playerShip3_blue.png");
 }
 
 void SpaceShip::update(float deltaTime) {
@@ -65,10 +62,8 @@ void SpaceShip::onKey(SDL_Event &keyEvent) {
     if (keyEvent.key.keysym.sym == SDLK_RIGHT){
         rotateCW = keyEvent.type == SDL_KEYDOWN;
     }
-    if (keyEvent.key.keysym.sym == SDLK_SPACE && keyEvent.type == SDL_KEYDOWN){
-        printf("%p = ptr to GM:SS\n", pAsteroidsGame->getGMPointer());
-        auto pGameObj = std::make_shared<Laser>(pAsteroidsGame->getGMPointer(), position, rotation);
-
-        pAsteroidsGame->instantiateObject(pGameObj);
+    if (keyEvent.key.keysym.sym == SDLK_SPACE && keyEvent.type == SDL_KEYDOWN && !Laser::isPresent){
+        auto pGameObj = std::make_shared<Laser>(position, rotation);
+        AsteroidsGame::pSingleton->instantiateObject(pGameObj);
     }
 }

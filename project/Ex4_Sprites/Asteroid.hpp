@@ -11,9 +11,7 @@
 
 class Asteroid : public GameObject, public Collidable  {
 public:
-    //Asteroid();
-
-    Asteroid(AsteroidsGame *pAsteroidsGame, glm::vec2 position = glm::vec2(0,0), int size = 2);
+    Asteroid(glm::vec2 position = glm::vec2(0,0), int size = 2);
 
     void update(float deltaTime) override;
     void onCollision(std::shared_ptr<GameObject> other) override;
@@ -21,7 +19,6 @@ public:
 private:
     int size = 2;
     glm::vec2 velocity{};
-    AsteroidsGame *pAsteroidsGame;
     float rotationSpeed;
 
     glm::vec2 winSize{};
