@@ -21,5 +21,7 @@ public:
 
     static bool isPresent;
 private:
-    glm::vec2 winSize{};
+    float timeAlive = 0;
+
+    void destroy();
 };

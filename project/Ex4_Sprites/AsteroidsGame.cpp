@@ -5,6 +5,7 @@
 
 using namespace sre;
 AsteroidsGame* AsteroidsGame::pSingleton = nullptr;
+
 AsteroidsGame::AsteroidsGame() {
     pSingleton=this;
 
@@ -95,6 +96,34 @@ void AsteroidsGame::render() {
         renderPass.drawLines(lines);
     }
 
+    // Collision detection
+    for (int i = 0; i < gameObjects.size(); i++){ // NOLINT
+        auto go = gameObjects[i];
+        auto col = std::dynamic_pointer_cast<Collidable>(go);
+        if (col != nullptr){
+            for (int j = 0; j < gameObjects.size(); j++){
+                auto go2 = gameObjects[j];
+                auto col2 = std::dynamic_pointer_cast<Collidable>(go2);
+                if (
+                        col2 != nullptr &&
+                        col2 != col &&
+                        col->getRadius()+col2->getRadius() > glm::distance(go->position, go2->position)
+                        )
+                {
+                    col->onCollision(go2);
+                    col2->onCollision(go);
+                }
+            }
+        }
+    }
+
+    // Check game won
+    auto asteroids = 0;
+    for (auto & gameObject : gameObjects) {
+        if(std::dynamic_pointer_cast<Asteroid>(gameObject)) asteroids++;
+    }
+    //if (asteroids == 0) gameWon;
+
     ImGui::SetNextWindowPos(ImVec2(Renderer::instance->getWindowSize().x/2 - 100, .0f), ImGuiSetCond_Always);
     ImGui::SetNextWindowSize(ImVec2(200, 70), ImGuiSetCond_Always);
     ImGui::Begin("", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
@@ -111,7 +140,6 @@ void AsteroidsGame::keyEvent(SDL_Event &event) {
 }
 
 void AsteroidsGame::unregisterObject(GameObject *pGameObj) {
-    printf("Del: %p", pGameObj);
     for (int i = 0; i<gameObjects.size(); i++) {
         if(gameObjects[i].get() == pGameObj)
             gameObjects.erase(gameObjects.begin() + i);
@@ -120,6 +148,22 @@ void AsteroidsGame::unregisterObject(GameObject *pGameObj) {
 
 void AsteroidsGame::instantiateObject(std::shared_ptr<GameObject> pGameObj) {
     gameObjects.push_back(pGameObj);
+}
+
+void AsteroidsGame::incrementScore() {
+    score++;
+}
+
+void AsteroidsGame::restartGame() {
+    score = 0;
+    gameObjects.clear();
+
+    gameObjects.push_back(std::make_shared<SpaceShip>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
+    gameObjects.push_back(std::make_shared<Asteroid>());
 }
 
 int main() {

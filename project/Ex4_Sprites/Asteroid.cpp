@@ -4,15 +4,32 @@
 
 #include <sre/Renderer.hpp>
 #include "Asteroid.hpp"
+#include "Laser.hpp"
 
-Asteroid::Asteroid(glm::vec2 _position, int size) : GameObject(sprite) {
+Asteroid::Asteroid(glm::vec2 _position, int _size) : GameObject(sprite) {
+    size = _size;
+    rotationSpeed = rand() % 100 + 40;
     velocity = glm::vec2(rand() % 200 - 100, rand() % 200 - 100);
     winSize = sre::Renderer::instance->getDrawableSize();
-    position = _position.x != 0 ? _position : glm::vec2(rand() % int(winSize.x), rand() % int(winSize.y));
     scale = glm::vec2(0.7f,0.7f);
-    sprite = AsteroidsGame::pSingleton->getSprite("Meteors/meteorGrey_big1.png");
-    radius = 25;
-    rotationSpeed = rand() % 100 + 40;
+
+    switch (size) {
+        case 0:
+            position = _position;
+            sprite = AsteroidsGame::pSingleton->getSprite("Meteors/meteorGrey_small1.png");
+            radius = 10;
+            break;
+        case 1:
+            position = _position;
+            sprite = AsteroidsGame::pSingleton->getSprite("Meteors/meteorGrey_med1.png");
+            radius = 15;
+            break;
+        default: // big asteroid
+            position = glm::vec2(rand() % int(winSize.x), rand() % int(winSize.y));
+            sprite = AsteroidsGame::pSingleton->getSprite("Meteors/meteorGrey_big1.png");
+            radius = 25;
+            break;
+    }
 }
 
 void Asteroid::update(float deltaTime) {
@@ -33,6 +50,13 @@ void Asteroid::update(float deltaTime) {
 }
 
 void Asteroid::onCollision(std::shared_ptr<GameObject> other) {
-    printf("Asteroid Collided with ");
-    if(dynamic_cast<SpaceShip*>(&*other) != nullptr) printf("spaceship\n");
+    if(std::dynamic_pointer_cast<Laser>(other) != nullptr) {
+        if(size != 0) {
+            printf("sixe %i\n",size);
+            AsteroidsGame::pSingleton->instantiateObject(std::make_shared<Asteroid>(position, --size));
+            AsteroidsGame::pSingleton->instantiateObject(std::make_shared<Asteroid>(position, size));
+        }
+        AsteroidsGame::pSingleton->unregisterObject(this);
+        AsteroidsGame::pSingleton->incrementScore();
+    }
 }

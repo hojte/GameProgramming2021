@@ -45,8 +45,10 @@ void SpaceShip::update(float deltaTime) {
 }
 
 void SpaceShip::onCollision(std::shared_ptr<GameObject> other) {
-    printf("SpaceShip Collided...");
-    if(dynamic_cast<Asteroid*>(&*other) != nullptr) printf("astroid\n");
+    if(std::dynamic_pointer_cast<Asteroid>(other) != nullptr)
+        printf("Ship:Dead\n");
+    // TODO send game over to GM
+
 }
 
 void SpaceShip::onKey(SDL_Event &keyEvent) {
