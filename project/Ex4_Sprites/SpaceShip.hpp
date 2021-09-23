@@ -2,10 +2,12 @@
 
 #include "GameObject.hpp"
 #include "Collidable.hpp"
+#include "Asteroid.hpp"
+
 
 class SpaceShip : public GameObject, public Collidable  {
 public:
-    SpaceShip(const sre::Sprite &sprite);
+    SpaceShip(AsteroidsGame *pAsteroidsGame);
 
     void update(float deltaTime) override;
     void onCollision(std::shared_ptr<GameObject> other) override;
@@ -23,6 +25,8 @@ private:
     glm::vec2 velocity;
 
     glm::vec2 winSize;
+
+    AsteroidsGame *pAsteroidsGame;
 };
 
 

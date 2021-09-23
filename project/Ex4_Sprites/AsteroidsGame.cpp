@@ -2,12 +2,13 @@
 #include <glm/gtc/constants.hpp>
 #include "AsteroidsGame.hpp"
 #include "SpaceShip.hpp"
-#include "Asteroid.hpp"
+#include "Laser.hpp"
+//#include "Asteroid.hpp"
 
 using namespace sre;
 
 AsteroidsGame::AsteroidsGame() {
-    //singleton = this;
+    printf("%p <-real pointer\n", this);
     r.setWindowTitle("Asteroids");
 
     r.init().withSdlInitFlags(SDL_INIT_EVERYTHING)
@@ -19,12 +20,10 @@ AsteroidsGame::AsteroidsGame() {
 
     atlas = SpriteAtlas::create("asteroids.json","asteroids.png");
 
-    auto spaceshipSprite = atlas->get("playerShip3_blue.png");
-    gameObjects.push_back(std::make_shared<SpaceShip>(spaceshipSprite));
+    gameObjects.push_back(std::make_shared<SpaceShip>(this));
 
-    auto asteroidSprite = atlas->get("Meteors/meteorGrey_big1.png");
-    gameObjects.push_back(std::make_shared<Asteroid>(this));
-    gameObjects.push_back(std::make_shared<Asteroid>(this));
+//    gameObjects.push_back(std::make_shared<Asteroid>(this));
+    gameObjects.push_back(std::make_shared<Laser>(this, ((glm::vec2)sre::Renderer::instance->getDrawableSize()) * 0.5f, 0));
 
     camera.setWindowCoordinates();
 
@@ -103,17 +102,26 @@ void AsteroidsGame::render() {
 }
 
 void AsteroidsGame::keyEvent(SDL_Event &event) {
-    for (auto & gameObject : gameObjects) {
-        gameObject->onKey(event);
-    }
-    if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_d){
+    for (int i = 0; i < gameObjects.size(); i++) gameObjects[i]->onKey(event); // NOLINT
+    if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_d) {
         debugCollisionCircles = !debugCollisionCircles;
     }
 }
 
-void AsteroidsGame::unregister(GameObject *pGameObj) {
+void AsteroidsGame::unregisterObject(GameObject *pGameObj) {
     printf("Del: %p", pGameObj);
-    //gameObjects.erase(pGameObj);
+    for (int i = 0; i<gameObjects.size(); i++) {
+        if(gameObjects[i].get() == pGameObj)
+            gameObjects.erase(gameObjects.begin() + i);
+    }
+}
+
+void AsteroidsGame::instantiateObject(std::shared_ptr<GameObject> pGameObj) {
+    gameObjects.push_back(pGameObj);
+}
+
+AsteroidsGame *AsteroidsGame::getGMPointer() {
+    return this;
 }
 
 int main() {

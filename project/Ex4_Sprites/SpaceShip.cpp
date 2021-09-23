@@ -2,13 +2,16 @@
 #include <glm/gtx/rotate_vector.hpp>
 #include "SpaceShip.hpp"
 #include "sre/Renderer.hpp"
+#include "Laser.hpp"
 
-SpaceShip::SpaceShip(const sre::Sprite &sprite) : GameObject(sprite) {
+SpaceShip::SpaceShip(AsteroidsGame *_pAsteroidsGame) : GameObject(sprite) {
+    pAsteroidsGame = _pAsteroidsGame;
     scale = glm::vec2(0.5f,0.5f);
     winSize = sre::Renderer::instance->getDrawableSize();
     radius = 23;
     position = winSize * 0.5f;
     velocity = glm::vec2(0.0f,0.0f);
+    sprite = pAsteroidsGame->getSprite("playerShip3_blue.png");
 }
 
 void SpaceShip::update(float deltaTime) {
@@ -46,6 +49,7 @@ void SpaceShip::update(float deltaTime) {
 
 void SpaceShip::onCollision(std::shared_ptr<GameObject> other) {
     printf("SpaceShip Collided...");
+    if(dynamic_cast<Asteroid*>(&*other) != nullptr) printf("astroid\n");
 }
 
 void SpaceShip::onKey(SDL_Event &keyEvent) {
@@ -57,5 +61,14 @@ void SpaceShip::onKey(SDL_Event &keyEvent) {
     }
     if (keyEvent.key.keysym.sym == SDLK_RIGHT){
         rotateCW = keyEvent.type == SDL_KEYDOWN;
+    }
+    if (keyEvent.key.keysym.sym == SDLK_RIGHT){
+        rotateCW = keyEvent.type == SDL_KEYDOWN;
+    }
+    if (keyEvent.key.keysym.sym == SDLK_SPACE && keyEvent.type == SDL_KEYDOWN){
+        printf("%p = ptr to GM:SS\n", pAsteroidsGame->getGMPointer());
+        auto pGameObj = std::make_shared<Laser>(pAsteroidsGame->getGMPointer(), position, rotation);
+
+        pAsteroidsGame->instantiateObject(pGameObj);
     }
 }

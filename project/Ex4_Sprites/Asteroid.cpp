@@ -5,17 +5,20 @@
 #include <sre/Renderer.hpp>
 #include "Asteroid.hpp"
 
-Asteroid::Asteroid(AsteroidsGame *_pAsteroidsGame) : GameObject(sprite) {
+Asteroid::Asteroid(AsteroidsGame *_pAsteroidsGame, glm::vec2 _position, int size) : GameObject(sprite) {
     pAsteroidsGame = _pAsteroidsGame;
     velocity = glm::vec2(rand() % 200 - 100, rand() % 200 - 100);
     winSize = sre::Renderer::instance->getDrawableSize();
-    position = glm::vec2(rand() % int(winSize.x), rand() % int(winSize.y));
+    position = _position.x != 0 ? _position : glm::vec2(rand() % int(winSize.x), rand() % int(winSize.y));
     scale = glm::vec2(0.7f,0.7f);
     sprite = pAsteroidsGame->getSprite("Meteors/meteorGrey_big1.png");
+    radius = 25;
+    rotationSpeed = rand() % 100 + 40;
 }
 
 void Asteroid::update(float deltaTime) {
     position += velocity * deltaTime;
+    rotation += rotationSpeed * deltaTime;
 
     // wrap around
     if (position.x < 0){
@@ -31,15 +34,6 @@ void Asteroid::update(float deltaTime) {
 }
 
 void Asteroid::onCollision(std::shared_ptr<GameObject> other) {
-    printf("Asteroid Collided...");
-    switch (size) {
-        case 2:
-            size--;
-            sprite = pAsteroidsGame->getSprite("Meteors/meteorGrey_med1.png");
-        case 1:
-            size--;
-            sprite = pAsteroidsGame->getSprite("Meteors/meteorGrey_small1.png");
-        default:
-            pAsteroidsGame->unregister(this);
-    }
+    printf("Asteroid Collided with ");
+    if(dynamic_cast<SpaceShip*>(&*other) != nullptr) printf("spaceship\n");
 }

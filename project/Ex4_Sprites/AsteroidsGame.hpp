@@ -12,7 +12,10 @@ public:
     AsteroidsGame();
     sre::Sprite getSprite(std::string fileName);
 
-    void unregister(GameObject *pGameObj);
+    void unregisterObject(GameObject *pGameObj);
+    void instantiateObject(std::shared_ptr<GameObject> pGameObj);
+
+    AsteroidsGame* getGMPointer();
 
 private:
     void update(float deltaTime);
