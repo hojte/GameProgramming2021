@@ -31,7 +31,7 @@ AsteroidsGame::AsteroidsGame() {
     camera.setWindowCoordinates();
 
     r.frameUpdate = [&](float deltaTime){
-        update(deltaTime);
+        if(!freezeGame) update(deltaTime);
     };
 
     r.keyEvent = [&](SDL_Event& event){
@@ -101,7 +101,7 @@ void AsteroidsGame::render() {
         auto go = gameObjects[i];
         auto col = std::dynamic_pointer_cast<Collidable>(go);
         if (col != nullptr){
-            for (int j = 0; j < gameObjects.size(); j++){
+            for (int j = 0; j < gameObjects.size(); j++){ // NOLINT
                 auto go2 = gameObjects[j];
                 auto col2 = std::dynamic_pointer_cast<Collidable>(go2);
                 if (
@@ -122,8 +122,9 @@ void AsteroidsGame::render() {
     for (auto & gameObject : gameObjects) {
         if(std::dynamic_pointer_cast<Asteroid>(gameObject)) asteroids++;
     }
-    //if (asteroids == 0) gameWon;
+    if (asteroids == 0) freezeGame = true;
 
+    // UI
     ImGui::SetNextWindowPos(ImVec2(Renderer::instance->getWindowSize().x/2 - 100, .0f), ImGuiSetCond_Always);
     ImGui::SetNextWindowSize(ImVec2(200, 70), ImGuiSetCond_Always);
     ImGui::Begin("", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
@@ -133,6 +134,8 @@ void AsteroidsGame::render() {
 }
 
 void AsteroidsGame::keyEvent(SDL_Event &event) {
+    if (freezeGame && event.type == SDL_KEYUP && event.key.keysym.sym == SDLK_SPACE) restartGame();
+
     for (int i = 0; i < gameObjects.size(); i++) gameObjects[i]->onKey(event); // NOLINT
     if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_d) {
         debugCollisionCircles = !debugCollisionCircles;
@@ -164,6 +167,12 @@ void AsteroidsGame::restartGame() {
     gameObjects.push_back(std::make_shared<Asteroid>());
     gameObjects.push_back(std::make_shared<Asteroid>());
     gameObjects.push_back(std::make_shared<Asteroid>());
+
+    freezeGame = false;
+}
+
+void AsteroidsGame::gameOver() {
+    freezeGame = true;
 }
 
 int main() {

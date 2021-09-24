@@ -45,10 +45,10 @@ void SpaceShip::update(float deltaTime) {
 }
 
 void SpaceShip::onCollision(std::shared_ptr<GameObject> other) {
-    if(std::dynamic_pointer_cast<Asteroid>(other) != nullptr)
-        printf("Ship:Dead\n");
-    // TODO send game over to GM
-
+    if(std::dynamic_pointer_cast<Asteroid>(other) != nullptr) {
+        AsteroidsGame::pSingleton->gameOver();
+        sprite = AsteroidsGame::pSingleton->getSprite("bang.png");
+    }
 }
 
 void SpaceShip::onKey(SDL_Event &keyEvent) {

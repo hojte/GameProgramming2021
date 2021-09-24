@@ -52,7 +52,6 @@ void Asteroid::update(float deltaTime) {
 void Asteroid::onCollision(std::shared_ptr<GameObject> other) {
     if(std::dynamic_pointer_cast<Laser>(other) != nullptr) {
         if(size != 0) {
-            printf("sixe %i\n",size);
             AsteroidsGame::pSingleton->instantiateObject(std::make_shared<Asteroid>(position, --size));
             AsteroidsGame::pSingleton->instantiateObject(std::make_shared<Asteroid>(position, size));
         }

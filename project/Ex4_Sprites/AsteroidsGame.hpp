@@ -19,6 +19,8 @@ public:
 
     void incrementScore();
 
+    void gameOver();
+
 private:
     void update(float deltaTime);
     void render();
@@ -32,6 +34,8 @@ private:
     bool debugCollisionCircles = false;
 
     int score = 0;
+
+    bool freezeGame = false;
 };
 
 
