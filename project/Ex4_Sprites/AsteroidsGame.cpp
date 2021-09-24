@@ -20,15 +20,9 @@ AsteroidsGame::AsteroidsGame() {
 
     atlas = SpriteAtlas::create("asteroids.json","asteroids.png");
 
-    gameObjects.push_back(std::make_shared<SpaceShip>());
-
-    gameObjects.push_back(std::make_shared<Asteroid>());
-    gameObjects.push_back(std::make_shared<Asteroid>());
-    gameObjects.push_back(std::make_shared<Asteroid>());
-    gameObjects.push_back(std::make_shared<Asteroid>());
-    gameObjects.push_back(std::make_shared<Asteroid>());
-
     camera.setWindowCoordinates();
+
+    restartGame();
 
     r.frameUpdate = [&](float deltaTime){
         if(!freezeGame) update(deltaTime);
@@ -126,16 +120,19 @@ void AsteroidsGame::render() {
 
     // UI
     ImGui::SetNextWindowPos(ImVec2(Renderer::instance->getWindowSize().x/2 - 100, .0f), ImGuiSetCond_Always);
-    ImGui::SetNextWindowSize(ImVec2(200, 70), ImGuiSetCond_Always);
+    ImGui::SetNextWindowSize(ImVec2(200, 85), ImGuiSetCond_Always);
     ImGui::Begin("", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
-    ImGui::LabelText("GOs", "%i", (int)gameObjects.size());
+    ImGui::LabelText(asteroids==0 ? "You Win!":"GOs", "%i", (int)gameObjects.size());
     ImGui::LabelText("Score", "%i",score);
+    ImGui::Checkbox("Multiplayer: ", &multiplayer);
     ImGui::End();
 }
 
 void AsteroidsGame::keyEvent(SDL_Event &event) {
-    if (freezeGame && event.type == SDL_KEYUP && event.key.keysym.sym == SDLK_SPACE) restartGame();
-
+    if (freezeGame && event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_SPACE) {
+        restartGame();
+        return;
+    }
     for (int i = 0; i < gameObjects.size(); i++) gameObjects[i]->onKey(event); // NOLINT
     if (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_d) {
         debugCollisionCircles = !debugCollisionCircles;

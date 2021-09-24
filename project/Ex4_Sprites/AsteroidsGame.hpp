@@ -36,6 +36,8 @@ private:
     int score = 0;
 
     bool freezeGame = false;
+
+    bool multiplayer = false;
 };
 
 
