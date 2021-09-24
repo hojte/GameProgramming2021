@@ -2,6 +2,7 @@
 #include <glm/gtc/constants.hpp>
 #include "AsteroidsGame.hpp"
 #include "SpaceShip.hpp"
+#include "Laser.hpp"
 
 using namespace sre;
 AsteroidsGame* AsteroidsGame::pSingleton = nullptr;
@@ -120,11 +121,11 @@ void AsteroidsGame::render() {
 
     // UI
     ImGui::SetNextWindowPos(ImVec2(Renderer::instance->getWindowSize().x/2 - 100, .0f), ImGuiSetCond_Always);
-    ImGui::SetNextWindowSize(ImVec2(200, 85), ImGuiSetCond_Always);
+    ImGui::SetNextWindowSize(ImVec2(200, 60), ImGuiSetCond_Always);
     ImGui::Begin("", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
-    ImGui::LabelText(asteroids==0 ? "You Win!":"GOs", "%i", (int)gameObjects.size());
+    if (freezeGame) ImGui::Text(asteroids==0 ? "YOU WIN! Press SPACE...":"GAME OVER! Press SPACE...");
+    else ImGui::LabelText("GOs", "%i", (int)gameObjects.size());
     ImGui::LabelText("Score", "%i",score);
-    ImGui::Checkbox("Multiplayer: ", &multiplayer);
     ImGui::End();
 }
 
@@ -155,6 +156,7 @@ void AsteroidsGame::incrementScore() {
 }
 
 void AsteroidsGame::restartGame() {
+    Laser::isPresent = false;
     score = 0;
     gameObjects.clear();
 
