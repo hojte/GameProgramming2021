@@ -16,12 +16,13 @@ void Box::draw(sre::RenderPass& renderPass) {
 }
 
 glm::mat4 Box::getTransform() {
-    // TODO exercise 1 - should return the transformation matrix for this object
-    //  containing translation (position) and scale,
-    //  remember that the order of transformations is important
     float scaleZ = 0.1f;
 
-    return glm::mat4(1);
+    glm::vec3 pos = glm::vec3(position.x, position.y, 0);
+    glm::mat4 transformationMatrix = glm::translate(glm::mat4(1), pos);
+    transformationMatrix = glm::scale(transformationMatrix, glm::vec3(scale.x, scale.y, scaleZ));
+
+    return transformationMatrix;
 }
 
 Edge2D Box::getEdge(int index) {

@@ -16,16 +16,18 @@ void Ball::draw(sre::RenderPass& renderPass) {
 }
 
 void Ball::move(float deltaTimeInSeconds) {
-    // TODO exercise 2
+    velocity *= 1.001; // make the game harder
+
+    position += velocity*deltaTimeInSeconds;
 }
 
 glm::mat4 Ball::getTransform() {
-    // TODO exercise 1 - should return the transformation matrix for this object
-    //  containing translation (position) and scale,
-    //  remember that the order of transformations is important
-    float scaleZ = 0.1f;
+    float scaleZ = 0.01f;
+    glm::vec3 pos = glm::vec3(position.x, position.y, 0);
+    glm::mat4 translationMatrix = glm::translate(glm::mat4(1), pos);
+    translationMatrix = glm::scale(translationMatrix, glm::vec3(radius, radius, scaleZ));
 
-    return glm::mat4(1);
+    return translationMatrix;
 }
 
 void Ball::init() {

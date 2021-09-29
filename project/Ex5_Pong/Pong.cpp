@@ -139,8 +139,8 @@ void Pong::handleKeyInput(SDL_Event& event) {
 }
 
 void Pong::movePaddle(Box *paddle, float yDelta) {
-    // TODO: Exercise 2
-
+    paddle->position += glm::vec2(0, yDelta);
+    paddle->position.y = glm::clamp(paddle->position.y, (float)(0+paddle->scale.y+paddle->scale.x*2), (float)height-paddle->scale.y - paddle->scale.x*2);
 }
 
 void Pong::resetBall(bool right) {
@@ -155,7 +155,14 @@ bool Pong::handleCollision(Box *paddle) {
         if (hasCollision(e)){
             // TODO: Exercise 3
             //  control what happens to the ball if there is a collision
-            return true;
+            // check if 90 deg
+            if (glm::dot(e.normal, ball.velocity) < 0) { // if angle > 90
+                auto angle = glm::acos(glm::dot(e.normal, ball.velocity) / (glm::length(e.normal)*glm::length(ball.velocity)));
+                angle = glm::degrees(angle);
+                ball.velocity = ball.velocity - 2.0f * (ball.velocity*e.normal) * e.normal;
+            }
+
+            return false;
         }
     }
     return false;
@@ -166,12 +173,25 @@ bool Pong::hasCollision(Edge2D edge) {
     //  If the angle between edge.normal and ball->velocity is less than 90 degrees, then assume no collision
     //  test for collision between edge and this->ball. If collision is detected, then reflect the velocity on the ball
     //  using edge.normal.
+    auto point = glm::closestPointOnLine(ball.position, edge.from, edge.to);
+    if (glm::distance(point, ball.position) < ball.radius) {
+        return true;
+    }
 
     return false;
 }
 
 void Pong::handleOutOfBounds() {
     // TODO: Exercise 3 - what happens when the ball goes out of the field
+    if (ball.position.x > width) {
+        resetBall(true);
+        leftScore++;
+    }
+
+    if (ball.position.x < 0) {
+        resetBall(false);
+        rightScore++;
+    }
 }
 
 int main(int argc, char** argv) {
