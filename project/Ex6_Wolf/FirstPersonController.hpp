@@ -18,10 +18,12 @@ private:
 
     // TODO you can use these to record the state of the keys and mouse movement
     //  remember to initialize if you decide to use these as is
-    bool fwd;
-    bool bwd;
-    bool left;
-    bool right;
+    bool fwd = false;
+    bool bwd = false;
+    bool left = false;
+    bool right = false;
     int xrel;
+
+    float speed = 1;
 };
 

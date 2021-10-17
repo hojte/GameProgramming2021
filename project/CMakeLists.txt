@@ -55,6 +55,7 @@ add_subdirectory(Exercise_1-6)
 add_subdirectory(Ex3_Cpp_Pointers)
 add_subdirectory(Ex4_Sprites)
 add_subdirectory(Ex5_Pong)
+add_subdirectory(Ex6_Wolf)
 
 IF (USE_BULLET)
 	add_subdirectory(3D_Scenegraph)

@@ -8,15 +8,10 @@ using namespace sre;
 using namespace glm;
 
 Wolf3D::Wolf3D()
-:fpsController(&camera)
+        :fpsController(&camera)
 {
     r.init();
     init();
-
-    // Enable mouse lock
-    // SDL_SetWindowGrab(r.getSDLWindow(),SDL_TRUE);
-    // SDL_SetRelativeMouseMode(SDL_TRUE);
-
 
     r.frameUpdate = [&](float deltaTime){
         update(deltaTime);
@@ -26,6 +21,12 @@ Wolf3D::Wolf3D()
     };
     r.keyEvent = [&](SDL_Event& e){
         fpsController.onKey(e);
+        if (e.type == SDL_KEYDOWN) {
+            if (e.key.keysym.sym == SDLK_RETURN)
+                lockMouse = !lockMouse;
+            if (e.key.keysym.sym == SDLK_l)
+                lockRotation = !lockRotation;
+        }
     };
     r.mouseEvent = [&](SDL_Event& e){
         if (!lockRotation){
@@ -36,6 +37,10 @@ Wolf3D::Wolf3D()
 }
 
 void Wolf3D::update(float deltaTime) {
+    // Enable/disable mouse lock
+    SDL_SetWindowGrab(r.getSDLWindow(),lockMouse?SDL_TRUE:SDL_FALSE);
+    SDL_SetRelativeMouseMode(lockMouse?SDL_TRUE:SDL_FALSE);
+
     fpsController.update(deltaTime);
 }
 
@@ -50,13 +55,14 @@ void Wolf3D::render() {
         renderDebugBricks(renderPass);
     }
 
-    ImGui::SetNextWindowPos(ImVec2(Renderer::instance->getWindowSize().x/2-100, .0f), ImGuiSetCond_Always);
-    ImGui::SetNextWindowSize(ImVec2(200, 100), ImGuiSetCond_Always);
-    ImGui::Begin("", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize);
+    ImGui::SetNextWindowPos(ImVec2(10, .0f), ImGuiCond_Once);
+    ImGui::SetNextWindowSize(ImVec2(260, 130), ImGuiCond_Once);
+    ImGui::Begin("Config", nullptr);
     ImGui::DragFloat("Rot", &fpsController.rotation);
     ImGui::DragFloat3("Pos", &(fpsController.position.x), 0.1f);
     ImGui::Checkbox("DebugBricks", &debugBricks);
-    ImGui::Checkbox("LockRotation", &lockRotation);
+    ImGui::SameLine(); ImGui::Checkbox("Lock Mouse[RET]", &lockMouse);
+    ImGui::Checkbox("LockRotation[L]", &lockRotation);
     ImGui::End();
 }
 
@@ -66,21 +72,62 @@ void Wolf3D::render() {
 void Wolf3D::addCube(std::vector<glm::vec3>& vertexPositions, std::vector<glm::vec4>& textureCoordinates, int x, int z, int type){
     // TODO implement this
 
+    auto translation = vec3(x, 0, z);
     // Incomplete implementation - creates two triangles in the xy-plane
     vertexPositions.insert(vertexPositions.end(),{
-            glm::vec3(-0.5,-0.5,0.5), glm::vec3(0.5,-0.5,0.5), glm::vec3(-0.5,0.5,0.5),
-            glm::vec3(0.5,0.5,0.5), glm::vec3(-0.5,0.5,0.5), glm::vec3(0.5,-0.5,0.5)
+            // front:
+            translation + glm::vec3(-0.5,-0.5,0.5),
+            translation + glm::vec3(0.5,-0.5,0.5),
+            translation + glm::vec3(-0.5,0.5,0.5),
+            translation + glm::vec3(0.5,0.5,0.5),
+            translation + glm::vec3(-0.5,0.5,0.5),
+            translation + glm::vec3(0.5,-0.5,0.5),
+            // side left
+            translation + glm::vec3(-0.5,-0.5,-0.5),
+            translation +  glm::vec3(-0.5,-0.5,0.5),
+            translation +  glm::vec3(-0.5,0.5,-0.5),
+            translation +     glm::vec3(-0.5,0.5,0.5),
+            translation +     glm::vec3(-0.5,0.5,-0.5),
+            translation +      glm::vec3(-0.5,-0.5,0.5),
+            // side right
+            translation +       glm::vec3(0.5,-0.5,0.5),
+            translation +       glm::vec3(0.5,-0.5,-0.5),
+            translation +      glm::vec3(0.5,0.5,0.5),
+            translation +      glm::vec3(0.5,0.5,-0.5),
+            translation +      glm::vec3(0.5,0.5,0.5),
+            translation +      glm::vec3(0.5,-0.5,-0.5),
+            // back side
+            translation +      glm::vec3(0.5,-0.5,-0.5),
+            translation +      glm::vec3(-0.5,-0.5,-0.5),
+            translation +     glm::vec3(0.5,0.5,-0.5),
+            translation +    glm::vec3(-0.5,0.5,-0.5),
+            translation +    glm::vec3(0.5,0.5,-0.5),
+            translation +   glm::vec3(-0.5,-0.5,-0.5),
     });
 
     glm::vec2 textureSize(2048,4096);
     glm::vec2 tileSize(64,64);
     glm::vec2 tileSizeWithBorder(65,65);
+    float column = type % 8;
+    auto row = type / 8;
 
     glm::vec2 min = vec2(0,42*tileSizeWithBorder.y) / textureSize;
     glm::vec2 max = min+tileSize / textureSize;
-    textureCoordinates.insert(textureCoordinates.end(),{
+    glm::vec2 minDark = vec2(tileSizeWithBorder.x*(column+1.0f), (42.0f - row)*tileSizeWithBorder.y) / textureSize;
+    glm::vec2 maxDark = minDark + tileSize / textureSize;
+
+    textureCoordinates.insert(textureCoordinates.end(),{ // front and right
             glm::vec4(min.x,min.y,0,0), glm::vec4(max.x,min.y,0,0), glm::vec4(min.x,max.y,0,0),
-            glm::vec4(max.x,max.y,0,0), glm::vec4(min.x,max.y,0,0), glm::vec4(max.x,min.y,0,0)
+            glm::vec4(max.x,max.y,0,0), glm::vec4(min.x,max.y,0,0), glm::vec4(max.x,min.y,0,0),
+            glm::vec4(minDark.x,minDark.y,0,0), glm::vec4(maxDark.x,minDark.y,0,0), glm::vec4(minDark.x,maxDark.y,0,0),
+            glm::vec4(maxDark.x,maxDark.y,0,0), glm::vec4(minDark.x,maxDark.y,0,0), glm::vec4(maxDark.x,minDark.y,0,0),
+            // left and back
+            glm::vec4(minDark.x,minDark.y,0,0), glm::vec4(maxDark.x,minDark.y,0,0), glm::vec4(minDark.x,maxDark.y,0,0),
+            glm::vec4(maxDark.x,maxDark.y,0,0), glm::vec4(minDark.x,maxDark.y,0,0), glm::vec4(maxDark.x,minDark.y,0,0),
+
+            //back
+            glm::vec4(min.x,min.y,0,0), glm::vec4(max.x,min.y,0,0), glm::vec4(min.x,max.y,0,0),
+            glm::vec4(max.x,max.y,0,0), glm::vec4(min.x,max.y,0,0), glm::vec4(max.x,min.y,0,0),
     });
 }
 

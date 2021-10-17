@@ -25,6 +25,7 @@ private:
     glm::vec4 ceilColor;
     bool debugBricks = true;
     bool lockRotation = false;
+    bool lockMouse = true;
 
 };
 
