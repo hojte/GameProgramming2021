@@ -11,6 +11,7 @@
 #include "PlatformerGame.hpp"
 #include "SpriteComponent.hpp"
 
+
 CharacterController::CharacterController(GameObject *gameObject) : Component(gameObject) {
     characterPhysics = gameObject->addComponent<PhysicsComponent>();
 
@@ -24,25 +25,25 @@ CharacterController::CharacterController(GameObject *gameObject) : Component(gam
 }
 
 bool CharacterController::onKey(SDL_Event &event) {
-        switch (event.key.keysym.sym){
-            case SDLK_SPACE:
-            {
-                if (isGrounded && event.type == SDL_KEYDOWN){ // prevents double jump
-                    jump();
-                }
+    switch (event.key.keysym.sym){
+        case SDLK_SPACE:
+        {
+            if (isGrounded && event.type == SDL_KEYDOWN){ // prevents double jump
+                jump();
             }
-            break;
-                case SDLK_LEFT:
-            {
-                left = event.type == SDL_KEYDOWN;
-            }
-            break;
-                case SDLK_RIGHT:
-            {
-                right = event.type == SDL_KEYDOWN;
-            }
-            break;
         }
+            break;
+        case SDLK_LEFT:
+        {
+            left = event.type == SDL_KEYDOWN;
+        }
+            break;
+        case SDLK_RIGHT:
+        {
+            right = event.type == SDL_KEYDOWN;
+        }
+            break;
+    }
 
     return false;
 }
@@ -100,10 +101,52 @@ void CharacterController::setSprites(sre::Sprite standing, sre::Sprite walk1, sr
     this->fly = fly;
     this->flyDown = flyDown;
 }
-
+float runningTime = 0;
 void CharacterController::updateSprite(float deltaTime) {
     auto velocity = characterPhysics->getLinearVelocity();
-    // todo implement
+
+    if (velocity == glm::vec2(0,0)) {
+        spriteComponent->setSprite(standing);
+        return;
+    }
+
+    if (right) {
+        walk1.setFlip(glm::bvec2(false, false));
+        walk2.setFlip(glm::bvec2(false, false));
+    }
+    if (left) {
+        walk1.setFlip(glm::bvec2(true, false));
+        walk2.setFlip(glm::bvec2(true, false));
+    }
+
+    if (isGrounded) {
+        if (velocity.x)
+        {
+            if (abs(velocity.x) < 2)
+            {
+                spriteComponent->setSprite(walk1);
+            }
+            else
+            {
+                spriteComponent->setSprite(walk2);
+            }
+        }
+        else
+        {
+            spriteComponent->setSprite(standing);
+        }
+    }
+    else if (!isGrounded) {
+        if (velocity.y > 2) {
+            spriteComponent->setSprite(flyUp);
+        }
+        else if (velocity.y < 2) {
+            spriteComponent->setSprite(flyDown);
+        }
+        else {
+            spriteComponent->setSprite(fly);
+        }
+    }
 }
 
 

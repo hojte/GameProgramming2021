@@ -24,7 +24,9 @@ ScriptComponent::ScriptComponent(GameObject *gameObject) : Component(gameObject)
 
                 //functions
                 "setPosition", &GameObject::setPosition,
-                "getPosition", &GameObject::getPosition
+                "getPosition", &GameObject::getPosition,
+                "getRotation", &GameObject::getRotation,
+                "setRotation", &GameObject::setRotation
                 //TODO: assignment - implement the variables and functions you need from GameObject.
     );
 

@@ -13,12 +13,15 @@ MovingPlatformComponent::MovingPlatformComponent(GameObject *gameObject) : Compo
 
 void MovingPlatformComponent::update(float deltaTime) {
     totalTime += deltaTime;
+    float time = fmod(totalTime,2);
 
-    // todo replace with easing function
-    if (fmod(totalTime,2)>1){
-        platformComponent->moveTo(movementEnd);
+    if (time>1){
+        time = time -1;
+        time = glm::smoothstep(0.0f, 1.0f, time);
+        platformComponent->moveTo(glm::mix(movementStart, movementEnd, time));
     } else {
-        platformComponent->moveTo(movementStart);
+        time = glm::smoothstep(0.0f, 1.0f, time);
+        platformComponent->moveTo(glm::mix(movementEnd, movementStart, time));
     }
 }
 

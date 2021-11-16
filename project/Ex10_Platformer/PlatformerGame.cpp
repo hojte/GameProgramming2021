@@ -126,14 +126,22 @@ void PlatformerGame::initLevel() {
     spiralBirdObj->setPosition(glm::vec2(100, 200));
 
     //TODO: assignment - Uncomment and add this ScriptComponent for exercise 10-4 and extend the ScriptComponent with the relevant functions from GameObject.
-    /* //REMOVE THIS BLOCK COMMENT
+    //REMOVE THIS BLOCK COMMENT
     auto script = spiralBirdObj->addComponent<ScriptComponent>();
 
      // TODO: assignment - update radius continuously in the lua script so that the bird flies in a spiral with radius between [10, 100]
     std::string luaScript =
-            "radius = 100\n"
+            "radius = 10\n"
             "-- Function evaluated for each update\n"
+            "toAdd = 1 \n"
             "function update (time) \n"
+            "   radius = radius+toAdd \n"
+            "   if (radius > 99) then \n"
+            "       toAdd = -1 \n"
+            "   end \n"
+            "   if (radius < 11) then \n"
+            "       toAdd = 1 \n"
+            "   end \n"
             "   gameobj = getGameObject() \n"
             "   rot = gameobj:getRotation()\n"
             "   rot = (rot + 250 * time ) % (360) \n"
@@ -156,7 +164,6 @@ void PlatformerGame::initLevel() {
             "end\n";
 
     script->init(luaScript);
-    */
 
     level->generateLevel();
 }
